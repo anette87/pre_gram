@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+.addImageblock {
+  background-color: rgb(214, 214, 214);
+  border-color: black;
+  height: 293px;
+  width: 293px;
+
+}
+
+.imagePostSize {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 93.5rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-left: 0 2rem;
+  padding-right: 0 2rem;
+  padding-bottom: 0 2rem;
+ 
+}
+
+.row {
+  margin: 0 auto;
+}
+
+.imageSize {
+  width: 293px;
+  height: 293px;
+  object-fit: cover;
+}
+
+.imageSize:hover {
+	opacity: 0.7;
+	
+}
+
+

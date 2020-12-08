@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Gallery from './containers/Gallery'
 
 function App() {
+
+  const [numGalleries, setnumGalleries] = useState(0)
+
+  const galleries = [];
+
+  for (var i = 0; i < numGalleries; i += 1) {
+    galleries.push(<Gallery id={i} />);
+  };
+
+  const onAddGallery = () => {
+    setnumGalleries(numGalleries + 1)    
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {galleries}
+      <button onClick={onAddGallery}> Add Row </button>
     </div>
+    
   );
 }
 

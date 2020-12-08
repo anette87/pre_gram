@@ -1,0 +1,4 @@
+ <div>
+        {console.log(postFormVisible)}
+        {postFormVisible ? <PostForm /> : <div onClick={() => setPostFormVisible(postFormVisible => !postFormVisible)}>{images}</div>}
+        </div>
