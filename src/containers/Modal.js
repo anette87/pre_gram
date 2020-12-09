@@ -39,7 +39,17 @@ class Modal extends React.Component {
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="modal-body">
-                                            ...
+                                            <form>
+                                                <label>
+                                                    Date:
+                                                    <input type="date" name="date" /><br></br>
+                                                    Name:
+                                                    <input type="text" name="name" /><br></br>
+                                                    Name:
+                                                    <input type="text" name="name" /><br></br>
+                                                </label>
+                                                <br></br><input type="submit" value="Submit" />
+                                            </form>
                                             </div> 
                                             <div>
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
