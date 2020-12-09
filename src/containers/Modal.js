@@ -30,7 +30,7 @@ class Modal extends React.Component {
             return(
                 <div>
                     <div class="modal fade" id={`${this.props.galleryId}-${this.props.imageId}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                             <div class="modal-content">
                                 <div class="modal-body">
                                     <div class="row">
