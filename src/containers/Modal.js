@@ -1,6 +1,7 @@
 import React from 'react';
 import Post from '../containers/Post';
 import PostForm from '../containers/PostForm';
+import PostInfo from '../containers/PostForm';
 
 
 
@@ -49,7 +50,7 @@ class Modal extends React.Component {
                                         <div class="col-lg-7">
                                             <div class="modal-body">
                                             {this.state.submited === false && <PostForm />}
-                                            {this.state.submited === true && <PostForm />}
+                                            {this.state.submited === true && <PostInfo />}
                                             </div> 
                                             <div>
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
