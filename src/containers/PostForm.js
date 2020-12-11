@@ -1,19 +1,25 @@
-// import React from 'react';
-// import Modal from './Modal.js';
+import React from 'react';
 
 
-// class PostForm extends React.Component {
-//     render(){
-//         return(
-//             <div>
-//                 <div data-toggle="modal" data-target="#exampleModalCenter">{this.props.images}</div>
-//                 <Modal />
-//             </div>
+class PostForm extends React.Component {
+    render(){
+        return(
+            <form>
+                <label>
+                    Date:
+                    <input type="date" name="date" /><br></br>
+                    Caption:
+                    <input type="text" name="caption" /><br></br>
+                    Hashtags:
+                    <input type="text" name="hashtags" /><br></br>
+                </label>
+                <br></br><input type="submit" value="Submit" />
+            </form>
             
-//         )
+        )
             
-//     }
+    }
 
-// }
+}
 
-// export default PostForm;
+export default PostForm;

@@ -1,5 +1,7 @@
 import React from 'react';
 import Post from '../containers/Post';
+import PostForm from '../containers/PostForm';
+
 
 
 class Modal extends React.Component {
@@ -15,13 +17,20 @@ class Modal extends React.Component {
     // }
 
     state = {
-            showEdit: false
+            showEdit: false,
+            submited: false
         }
 
 
     handleEditClick = () => {
         this.setState({
             showEdit: true
+        })   
+    }
+
+    handleSumbitClick = () => {
+        this.setState({
+            submited: true
         })   
     }
 
@@ -39,17 +48,8 @@ class Modal extends React.Component {
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="modal-body">
-                                            <form>
-                                                <label>
-                                                    Date:
-                                                    <input type="date" name="date" /><br></br>
-                                                    Name:
-                                                    <input type="text" name="name" /><br></br>
-                                                    Name:
-                                                    <input type="text" name="name" /><br></br>
-                                                </label>
-                                                <br></br><input type="submit" value="Submit" />
-                                            </form>
+                                            {this.state.submited === false && <PostForm />}
+                                            {this.state.submited === true && <PostForm />}
                                             </div> 
                                             <div>
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
