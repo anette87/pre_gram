@@ -49,7 +49,7 @@ class Modal extends React.Component {
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="modal-body">
-                                            {this.state.submited === false && <PostForm />}
+                                            {this.state.submited === false && <PostForm submitClick={this.handleSumbitClick} />}
                                             {this.state.submited === true && <PostInfo />}
                                             </div> 
                                             <div>

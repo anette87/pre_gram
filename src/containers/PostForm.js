@@ -3,6 +3,7 @@ import React from 'react';
 
 class PostForm extends React.Component {
     render(){
+        {console.log(this.props)}
         return(
             <form>
                 <label>
@@ -13,7 +14,7 @@ class PostForm extends React.Component {
                     Hashtags:
                     <input type="text" name="hashtags" /><br></br>
                 </label>
-                <br></br><input type="submit" value="Submit" />
+                <br></br><input onClick={this.props.submitClick}type="submit" value="Submit" />
             </form>
             
         )
