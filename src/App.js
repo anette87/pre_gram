@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import Gallery from './containers/Gallery'
+import Header from './containers/Header'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />  
       {galleries}
       <button onClick={onAddGallery}> Add Row </button>
     </div>
