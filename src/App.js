@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import Gallery from './containers/Gallery'
 import Header from './containers/Header'
+import UserInfo from './containers/UserInfo';
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />  
+      <Header />
+      <UserInfo />  
       {galleries}
       <button onClick={onAddGallery}> Add Row </button>
     </div>

@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Avatar from "@material-ui/core/Avatar";
+
 
 function UserInfo() {
     return (
-        <div>
+        <div className= "avatar">
+            <Avatar />
             
         </div>
     )
