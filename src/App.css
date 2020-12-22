@@ -117,6 +117,8 @@
   width: 40%;
 }
 
+/* Header */
+
 .NavbarItems {
   box-sizing: border-box;
   margin: 0;
@@ -137,4 +139,42 @@
 
 }
 
+.bg-dark{
+  background: linear-gradient(90deg, rgb(160, 125, 127) 0%, rgba(217,182,184,1)100%);
+}
 
+
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+  margin-right: 2rem
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover{
+  background-color: white;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  color:rgb(57,55,60)
+}
+
+.navbar-toggler:hover{
+  background-color: rgb(160,125,127);
+}
+
+.navbar-toggler:focus {
+  outline-color:rgb(57,55,60) ;
+}
+
+.navbar-menu{
+  color: white
+}
