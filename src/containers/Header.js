@@ -5,7 +5,6 @@ import { MenuItems } from './MenuItems';
 class Header extends React.Component {
     render(){
         return(
-            <div className= "app_header">
                 <nav className="NavbarItems">
                     <h1 className="navbar-logo">PreGram</h1> 
                 <div className="menu-icon">
@@ -22,7 +21,6 @@ class Header extends React.Component {
                     })}
                 </ul>   
                 </nav>     
-            </div>
             
         )
             
