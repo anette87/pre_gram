@@ -44,10 +44,10 @@ class Modal extends React.Component {
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="row">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-7">
                                         <h5 class="modal-title" id="exampleModalLongTitle"> {this.props.images} </h5>
                                     </div>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-3">
                                         <div class="modal-body">
                                             {(this.state.submited === false)  /*if submited is false show the form (?) else (:) show the PostInfo component*/
                                                 ? <form>

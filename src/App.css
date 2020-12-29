@@ -86,6 +86,14 @@
   object-fit: cover;
 }
 
+
+.modal .modal-body .imageSize {
+  width: 100%;
+  height: auto;
+}
+
+
+
 .imageSize:hover {
 	opacity: 0.7;
 	
