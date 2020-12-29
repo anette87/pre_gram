@@ -32,7 +32,7 @@ class Modal extends React.Component {
     
     handleHashtagsChange = (event) => { 
         this.setState({
-            hastags: event.target.value
+            hashtags: event.target.value
         })
     }
 
@@ -61,7 +61,7 @@ class Modal extends React.Component {
                                                     </label>
                                                     <br></br><input onClick={this.handleSumbitClick}type="submit" value="Submit" />
                                                 </form>      
-                                                : <PostInfo />
+                                                : <PostInfo date={this.state.date} caption={this.state.caption} hashtags={this.state.hashtags} />
                                             }    
                                         </div> 
                                     </div>            
