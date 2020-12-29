@@ -3,11 +3,11 @@ import React from 'react';
 
 class PostForm extends React.Component {
 
-    state = {
-        date: "",
-        caption: "",
-        hastags: ""
-    }
+    // state = {
+    //     date: "",
+    //     caption: "",
+    //     hastags: ""
+    // }
     
     handleDateChange = (event) => { 
         this.setState({

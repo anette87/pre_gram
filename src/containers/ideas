@@ -2,3 +2,11 @@
         {console.log(postFormVisible)}
         {postFormVisible ? <PostForm /> : <div onClick={() => setPostFormVisible(postFormVisible => !postFormVisible)}>{images}</div>}
         </div>
+
+Toggle = {/* {this.state.submited ? <PostInfo  /> : <PostForm submitClick={this.handleSumbitClick}/>} */}
+
+buttons = {/* <div>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                <button type="button" class="btn btn-primary" onClick={this.handleEditClick}>Edit</button>
+                                            </div>   */}
