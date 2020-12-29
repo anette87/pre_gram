@@ -1,7 +1,7 @@
 import React from 'react';
 import Post from '../containers/Post';
 import PostForm from '../containers/PostForm';
-import PostInfo from '../containers/PostForm';
+import PostInfo from '../containers/PostInfo';
 
 
 
@@ -18,17 +18,9 @@ class Modal extends React.Component {
     // }
 
     state = {
-            showEdit: false,
             submited: false
         }
-
-
-    handleEditClick = () => {
-        this.setState({
-            showEdit: true
-        })   
-    }
-
+   
     handleSumbitClick = () => {
         this.setState({
             submited: true
@@ -36,7 +28,6 @@ class Modal extends React.Component {
     }
 
     render(){
-        if (this.state.showEdit === false)
             return(
                 <div>
                     <div class="modal fade" id={`${this.props.galleryId}-${this.props.imageId}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -49,8 +40,7 @@ class Modal extends React.Component {
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="modal-body">
-                                            {this.state.submited === false && <PostForm submitClick={this.handleSumbitClick}/>}
-                                            {this.state.submited === true && <PostInfo />}
+                                                {this.state.submited ? <PostInfo /> : <PostForm submitClick={this.handleSumbitClick}/>}
                                             </div> 
                                             {/* <div>
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -65,36 +55,6 @@ class Modal extends React.Component {
                     </div>
                 </div>        
             )
-        else 
-            return (
-                <div>
-                    <div class="modal fade" id={`${this.props.galleryId}-${this.props.imageId}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-lg-5">
-                                            <h5 class="modal-title" id="exampleModalLongTitle"> <Post /> </h5>
-                                        </div>
-                                        <div class="col-lg-7">
-                                            <div class="modal-body">
-                                            ...
-                                            </div> 
-                                            <div>
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                                <button type="button" class="btn btn-primary" onClick={this.handleEditClick}>Edit</button>
-                                            </div>  
-                                        </div>            
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-
-            )
-            
     }
 
 }

@@ -28,7 +28,7 @@ class PostForm extends React.Component {
     }
 
     render(){
-        {console.log(this.state.caption)}
+        {console.log(this.props.submitClick)}
         return(
             <form>
                 <label>
