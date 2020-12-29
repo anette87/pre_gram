@@ -49,14 +49,14 @@ class Modal extends React.Component {
                                         </div>
                                         <div class="col-lg-7">
                                             <div class="modal-body">
-                                            {this.state.submited === false && <PostForm submitClick={this.handleSumbitClick} />}
+                                            {this.state.submited === false && <PostForm submitClick={this.handleSumbitClick}/>}
                                             {this.state.submited === true && <PostInfo />}
                                             </div> 
-                                            <div>
+                                            {/* <div>
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                                 <button type="button" class="btn btn-primary">Save changes</button>
                                                 <button type="button" class="btn btn-primary" onClick={this.handleEditClick}>Edit</button>
-                                            </div>  
+                                            </div>   */}
                                         </div>            
                                     </div>
                                 </div>

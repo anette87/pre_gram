@@ -2,17 +2,42 @@ import React from 'react';
 
 
 class PostForm extends React.Component {
+
+    state = {
+        date: "",
+        caption: "",
+        hastags: ""
+    }
+    
+    handleDateChange = (event) => { 
+        this.setState({
+            date: event.target.value
+        })
+    }
+    
+    handleCaptionChange = (event) => { 
+        this.setState({
+            caption: event.target.value
+        })
+    }
+    
+    handleHashtagsChange = (event) => { 
+        this.setState({
+            hastags: event.target.value
+        })
+    }
+
     render(){
-        {console.log(this.props)}
+        {console.log(this.state.caption)}
         return(
             <form>
                 <label>
                     Date:
-                    <input type="date" name="date" /><br></br>
+                    <input type="date" value={this.state.date} name="date" onChange={this.handleDateChange} /><br></br>
                     Caption:
-                    <input type="text" name="caption" /><br></br>
+                    <input type="text"  value={this.state.caption} name="caption" onChange={this.handleCaptionChange} /><br></br>
                     Hashtags:
-                    <input type="text" name="hashtags" /><br></br>
+                    <input type="text" value={this.state.hashtags} name="hashtags" onChange={this.handleHashtagsChange} /><br></br>
                 </label>
                 <br></br><input onClick={this.props.submitClick}type="submit" value="Submit" />
             </form>
