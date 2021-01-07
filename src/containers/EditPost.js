@@ -7,7 +7,7 @@ class EditPost extends React.Component {
         submited: false,
         date: this.props.date,
         caption: this.props.caption,
-        hastags: this.props.hashtags
+        hashtags: this.props.hashtags
     }
 
     handleSumbitClick = () => {
