@@ -52,7 +52,7 @@ class Modal extends React.Component {
                                             {(this.state.submited === false)  /*if submited is false show the form (?) else (:) show the PostInfo component*/
                                                 ? <form>
                                                     <label>
-                                                    Date:
+                                                        Date:
                                                         <input type="date" value={this.state.date} name="date" onChange={this.handleDateChange} /><br></br>
                                                         Caption:
                                                         <input type="text"  value={this.state.caption} name="caption" onChange={this.handleCaptionChange} /><br></br>
