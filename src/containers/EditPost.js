@@ -36,7 +36,7 @@ class EditPost extends React.Component {
     render(){
         return (
             <div>
-                {(this.state.handleSumbitClick === false)
+                {(this.state.submited === false)
                 ?
                 <form>
                     <label>
