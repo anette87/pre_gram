@@ -40,6 +40,7 @@ class EditPost extends React.Component {
                 ?
                 <form>
                     <label>
+                        <input /*onClick={this.handleSumbitClick}*/ type="submit" value="Edit Picture" /><br></br>
                         Date:
                         <input type="date" value={this.state.date} name="date" onChange={this.handleDateChange} /><br></br>
                         Caption:
