@@ -32,7 +32,8 @@ function Post(props) {
   ))
   
 
-  if (images.length === 0){
+  if (images.length === 0 ){
+    {console.log(images.length)}
     return (
     <div>
       <div className="addImageblock" {...getRootProps()}>
@@ -45,7 +46,7 @@ function Post(props) {
     else {
       return(
         <div>
-          {(deletePic === false)
+          {(deletePic === false && images.length !== 0)
           ?
           <div>
             <div data-toggle="modal" data-target={`#${props.id}-${images[0].props.children[1].props.children.props.id}`}>{images}</div>
@@ -55,12 +56,9 @@ function Post(props) {
           <div className="addImageblock" {...getRootProps()}>
             <input {...getInputProps()} />
             <img src="draganddropicon.png"/>
-            <p>Add Image</p>  
+            <p>Addrff Image</p>  
           </div>
           }
-
-          
-          
           
           <Modal galleryId={props.id} images={images} imageId={images[0].props.children[1].props.children.props.id }  />
           
