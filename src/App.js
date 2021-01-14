@@ -13,7 +13,7 @@ function App() {
           <Switch>
             <div>
               <Route path="/calendar" component={Calendar}/>
-              <Route path="/feed" component={FeedPreview}/>
+              <Route path="/feedpreview" component={FeedPreview}/>
             </div>
           </Switch> 
       </div>
