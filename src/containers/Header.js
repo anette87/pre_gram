@@ -11,17 +11,19 @@ class Header extends React.Component {
                 <div class="collapse" id="navbarToggleExternalContent">
                     <div class="bg-dark p-4"> {/*change bg-dark to change the color and do the same on the nav */}
                         <ul className="nav-menu">
+                        
                             {MenuItems.map((item, index) => {
                                 return (
-                                    <li key={index}>
-                                        <a className={item.cName} href={item.url}>
-                                            <Link to={`${item.url}`}>
+                                    <Link to={`${item.url}`}>
+                                        <li key={index}>
+                                            <a className={item.cName} href={item.url}>
                                                 {item.title}
-                                            </Link>
-                                        </a>
-                                    </li>
+                                            </a>
+                                        </li>
+                                    </Link>
                                 )
-                            })}
+                                
+                            })}    
                         </ul>   
                     </div>
                 </div>
