@@ -6,7 +6,7 @@ export const MenuItems = [
     },
     {
         title: 'Calendar',
-        url: '#', //link
+        url: '/calendar', //link
         cName: 'nav-links'
      },
      {

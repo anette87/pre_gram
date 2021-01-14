@@ -3,6 +3,8 @@ import './App.css';
 import Gallery from './containers/Gallery'
 import Header from './containers/Header'
 import UserInfo from './containers/UserInfo';
+import {Switch, Route} from "react-router-dom";
+import Calendar  from "./containers/Calendar";
 
 function App() {
 
@@ -21,7 +23,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <UserInfo />  
+        <Switch>
+          <div>
+            <Route path="/calendar" component={Calendar}/>
+            <Route path="/userinfo" component={UserInfo}/>
+          </div>
+        </Switch> 
       {galleries}
       <button onClick={onAddGallery}> Add Row </button>
     </div>

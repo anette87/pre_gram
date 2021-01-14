@@ -1,5 +1,6 @@
 import React from 'react';
 import { MenuItems } from './MenuItems';
+import {Link} from "react-router-dom";
 
 
 class Header extends React.Component {
@@ -14,7 +15,9 @@ class Header extends React.Component {
                                 return (
                                     <li key={index}>
                                         <a className={item.cName} href={item.url}>
-                                            {item.title}
+                                            <Link to={`${item.url}`}>
+                                                {item.title}
+                                            </Link>
                                         </a>
                                     </li>
                                 )
