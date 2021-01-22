@@ -3,7 +3,7 @@ import React from 'react';
 export default function Calendar() {
 
     return (
-        <div>
+        <div id="login-content">
             <form id="login-form" class="login-form">
                 <label for="user-id" >Email:</label>
                 <input type="email" name="user-id" id="partner-user-ID"></input>
