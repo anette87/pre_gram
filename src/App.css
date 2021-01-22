@@ -193,22 +193,27 @@
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
+  background-image: url("monica-sauro-iXepMv9x_mg-unsplash.jpg");
 }
 .login-form {
   position: relative;
   z-index: 1;
-  background: #FFFFFF;
+  background: linear-gradient(90deg, rgb(57,55,60) 0%, rgb(82, 81, 83)100%);
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   margin-top: 12%;
+  color: #ffffff;
+  font-weight: bold;
+  
+  
 }
 .login-form input {
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: #ffffff;
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -237,3 +242,6 @@
 .login-form input[type="submit"]:focus {
   background:rgba(217,182,184,1);
 }
+/* 
+Dark Gray: rgb(57,55,60)
+Light Gray: rgb(168,167,160) */
