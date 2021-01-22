@@ -4,6 +4,8 @@ import Header from './containers/Header'
 import {Switch, Route} from "react-router-dom";
 import Calendar  from "./containers/Calendar";
 import FeedPreview from "./containers/FeedPreview";
+import Home from "./containers/Home";
+
 
 function App() {
 
@@ -12,8 +14,9 @@ function App() {
         <Header />
           <Switch>
             <div>
-              <Route path="/calendar" component={Calendar}/>
-              <Route path="/feedpreview" component={FeedPreview}/>
+              <Route exact path="/calendar" component={Calendar}/>
+              <Route exact path="/feedpreview" component={FeedPreview}/>
+              <Route exact path="/" component={Home}/>
             </div>
           </Switch> 
       </div>
