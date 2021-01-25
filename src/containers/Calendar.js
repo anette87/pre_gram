@@ -17,15 +17,15 @@ export default function Calendar() {
 
 
     return (
-           <div className="calendar">
+           <table className="calendar">
                {calendar.map((week) => (
                    <div>
                        {week.map((day) => (
-                           <div className="day">{day.format("D").toString()}</div>
+                           <td className="day">{day.format("D").toString()}</td>
                         ))}
                     </div>
                 ))}
-            </div>        
+            </table>        
         )
 }
 

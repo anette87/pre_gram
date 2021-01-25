@@ -305,7 +305,7 @@ Light Gray: rgb(168,167,160) */
 .calendar .day {
   position: relative;
   width: calc(100% / 7);
-  height: 44px;
+  /* height: 44px; */
   display: inline-block;
   background-color: white;
   padding: 0;
@@ -317,7 +317,7 @@ Light Gray: rgb(168,167,160) */
 
 .calendar .day div {
   width: 54px;
-  height: 44px;
+  /* height: 44px; */
   position: relative;
   color: black;
   z-index: 100;
@@ -336,4 +336,24 @@ Light Gray: rgb(168,167,160) */
 
 .calendar .day div.today {
   background-color: grey;
+}
+
+table {
+  table-layout: fixed;
+  width: 1250px;
+  height: auto;
+}
+
+table td {
+  height: 100px;
+  position: relative;
+}
+
+table td:before {
+  content: attr(data-day);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: yellow;
 }
