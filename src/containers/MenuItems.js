@@ -5,9 +5,9 @@ export const MenuItems = [
        cName: 'nav-links'
     },
     {
-      title: 'Feed Preview',
-      url: '/feedpreview', //link
-      cName: 'nav-links'
+       title: 'Feed Preview',
+       ur: '/feedpreview', //link
+       cName: 'nav-links'
    },
     {
         title: 'Calendar',
@@ -20,8 +20,8 @@ export const MenuItems = [
         cName: 'nav-links'
      },
      {
-        title: 'Sign Up',
-        url: '#', //link
+        title: 'Log Out',
+        url: '/logout', //link
         cName: 'nav-links'
      }
 
