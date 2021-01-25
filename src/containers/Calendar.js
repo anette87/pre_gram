@@ -21,7 +21,7 @@ export default function Calendar() {
                {calendar.map((week) => (
                    <div>
                        {week.map((day) => (
-                           <div>{day.format("D").toString()}</div>
+                           <div className="day">{day.format("D").toString()}</div>
                         ))}
                     </div>
                 ))}
