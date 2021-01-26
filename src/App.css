@@ -325,7 +325,7 @@ Light Gray: rgb(168,167,160) */
 }
 
 .calendar .day div.before {
-  color: grey;
+  color: rgb(217,182,184);
 }
 
 .calendar .day div.selected {
