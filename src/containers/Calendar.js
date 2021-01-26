@@ -62,30 +62,28 @@ export default function Calendar() {
 
     return (
             <div className="calendar">
-                <div className="header">
-                    <div className="previous" onClick={() => !thisMonth() &&setValue(prevMonth())}>{!thisMonth() ? String.fromCharCode(171) : null }</div>
-                    <div className= "current">{currMonthName()} {currYear()}</div>
-                    <div className= "next" onClick={() => setValue(nextMonth())}>{String.fromCharCode(187)}</div>
-                </div>
-                <div className="body">
-                    <div className="day-names">
-                        {["s","m","t","w","t","f","s"].map((d) => (
-                            <div className="week">{d}</div>
+                <table className="body">
+                    <div className="header">
+                        <div className="previous" onClick={() => !thisMonth() &&setValue(prevMonth())}>{!thisMonth() ? String.fromCharCode(171) : null }</div>
+                        <div className= "current">{currMonthName()} {currYear()}</div>
+                        <div className= "next" onClick={() => setValue(nextMonth())}>{String.fromCharCode(187)}</div>
+                    </div>
+                    <div>
+                        {["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURDSAY","FRIDAY","SATURDAY"].map((d) => (
+                            <td className="week">{d}</td>
                         ))}
                     </div>
-                    <table>
-                        {calendar.map((week) => (
-                            <div>
-                                {week.map((day) => (
-                                    <td className="day" onClick={() => !beforeToday(day) && setValue(day)}>
+                    {calendar.map((week) => (
+                        <div>
+                            {week.map((day) => (
+                                <td className= "day" onClick={() => !beforeToday(day) && setValue(day)}>
                                     <div className={dayStyles(day)}>{day.format("D").toString()}</div>
-                                    </td>
-                                ))}
-                            </div>
-                        ))}
-                    </table> 
-                </div>     
-           </div>  
+                                </td>
+                            ))}
+                        </div>
+                    ))}
+                </table>            
+            </div>  
         )
 }
 
