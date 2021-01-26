@@ -6,7 +6,7 @@ export const MenuItems = [
     },
     {
        title: 'Feed Preview',
-       ur: '/feedpreview', //link
+       url: '/feedpreview', //link
        cName: 'nav-links'
    },
     {
